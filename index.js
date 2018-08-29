@@ -11,7 +11,7 @@ function createIssue() {
     fetch(repo, { 
     method: 'post',
     headers: { 
-      Authorization: `token ${getToken}` }}).then(res => showIssues(res))
+      Authorization: `token ${getToken}` }}).then(res => res.json()).then(json => showIssues(json))
 }
 
 function showResults(json) {

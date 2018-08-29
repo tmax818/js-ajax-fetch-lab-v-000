@@ -1,7 +1,7 @@
 function getIssues() {
 }
 
-function showIssues('test body') {
+function showIssues(json) {
   document.getElementById('body').innerHTML = json;
 }
 

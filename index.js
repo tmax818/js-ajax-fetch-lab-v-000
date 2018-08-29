@@ -16,7 +16,7 @@ function createIssue() {
   //use fetch to fork it!
     fetch(repo, { 
     method: 'post',
-    
+    body: 'test body',
     headers: { 
       Authorization: `token ${getToken}` }}).then(res => res.json()).then(json => showIssues(json))
 }

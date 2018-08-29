@@ -1,5 +1,5 @@
 function getIssues() {
-    const repo = 'api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/';
+    const repo = 'javascript-fetch-lab/issues/';
   //use fetch to fork it!
     fetch(repo, { 
     method: 'post',
